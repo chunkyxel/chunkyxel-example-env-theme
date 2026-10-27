@@ -1,0 +1,43 @@
+[gd_resource type="Theme" format=3]
+
+[sub_resource type="Gradient" id="white_pink"]
+offsets = PackedFloat32Array(0, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.98, 0.7, 0.82, 1)
+
+[sub_resource type="GradientTexture2D" id="white_pink_texture"]
+gradient = SubResource("white_pink")
+fill_from = Vector2(0, 0)
+fill_to = Vector2(1, 1)
+
+[sub_resource type="StyleBoxTexture" id="body"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+texture = SubResource("white_pink_texture")
+
+[sub_resource type="StyleBoxTexture" id="header"]
+content_margin_left = 8.0
+content_margin_top = 0.0
+content_margin_right = 8.0
+content_margin_bottom = 0.0
+texture = SubResource("white_pink_texture")
+
+[sub_resource type="StyleBoxTexture" id="status"]
+content_margin_left = 12.0
+content_margin_top = 0.0
+content_margin_right = 12.0
+content_margin_bottom = 0.0
+texture = SubResource("white_pink_texture")
+
+[resource]
+Chunkyxel/colors/background = Color(0.99, 0.94, 0.96, 1)
+Chunkyxel/colors/surface = Color(0.96, 0.78, 0.87, 1)
+Chunkyxel/colors/text = Color(0.25, 0.1, 0.18, 1)
+Chunkyxel/colors/accent = Color(0.85, 0.2, 0.5, 1)
+BodyPanel/base_type = &"PanelContainer"
+BodyPanel/styles/panel = SubResource("body")
+HeaderPanel/base_type = &"PanelContainer"
+HeaderPanel/styles/panel = SubResource("header")
+StatusPanel/base_type = &"PanelContainer"
+StatusPanel/styles/panel = SubResource("status")

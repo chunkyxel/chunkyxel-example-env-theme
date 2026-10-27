@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3]
+
+[resource]
+Chunkyxel/colors/background = Color(0.16, 0.11, 0.24, 1)
+Chunkyxel/colors/surface = Color(0.36, 0.26, 0.5, 1)
+Chunkyxel/colors/text = Color(0.95, 0.92, 1, 1)
+Chunkyxel/colors/accent = Color(0.88, 0.63, 0.16, 1)
